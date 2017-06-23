@@ -1,0 +1,118 @@
+RESUMO DE JAVACRIPT
+
+============== VIDEO 01 INTRODUÇÃO DA LINGUAGEM =====================
+
+Javascript é uma linguagem de programação, criada por Brendan Eich, mas antes ser chamada de Javascript, essa linguagem passou por diversos nomes como:
+MOCA, LIVESCRIPT, JAVASCRIPT atualmente, mas o nome verdadeiro é ECMASCRIPT que foi padronizado em junho de 1997. Todos os desenvolvedores conhecem 
+como Javascript o nome fantasia da linguagem. A microsoft não queria ficar para trás e criou a linguagem JSCRIPT.
+Javascript herdou algumas funcionalidades de algumas linguagem como: 
+
+JAVA = Sintaxe e algumas convenções.
+SCHEME = Lambda, Closures, Tipagem fraca.
+PERL =  Expressões Regulares (Outras linguagem também usam).
+SELF = Herança baseada em protótipos e objetos dinâmicos.
+
+
+A linguagem Javascript ela é interpretada, isso significa que ela não precisa ser instalada no seu computador para funcionar, só se você quiser interpretar
+essa linguagem em back-end com (Node.js por exemplo).
+
+
+============== VIDEO 01 VARIÁVEIS =====================
+
+Variável pode ser declara com "$, _ ,LETRA", seguindo a video aula do Branas é melhor adotar o modo que a maioria do mercado faz, que é DECLARAR VARIÁVEIS
+COM LETRA MINUSCULA, se caso a variavel seguir de duas palavras usar "CAMELCASE" , que significa "INICIAR COM LETRA MINUSCULA SEGUIDO PELA SEGUNDA PALAVRA COM A 
+INICIAL MAIUSCULA". Deixando assim o "$", para bibliotecas como Jquery , e "_" para nossas propriedades privadas.
+
+
+
+
+============== VIDEO 02, 03, 04 TIPOS DE DADOS =====================
+
+Existem 3 tipos de dados em JavaScript: Number, String, Boolean.
+Em JavaScript números fracionários como por exemplo: 10.4 também é NUMBER
+A String ela é IMUTÁVEL, lembrar sempre de fazer operação de reatribuição, sempre que a String for modificada.
+String pode ser declaradas com ASPAS SIMPLES OU ASPAS DUPLAS.
+CUIDADO COM TRUTHY E FALSE. LEMBRAR QUE : !!0, !!'', !!null, !!undefinied, !!false, !!NaN são todos "FALSE" . Todo o resto é "TRUTHY" );
+
+
+
+============== VIDEO 05 NULL E UNDEFINIED =====================
+
+NULL => Indica a ausência de valor em uma propriedade já existente.
+UNDEFINED => Retorna UNDEFINED quando tentamos acessar a propriedade de um objeto, e esse objeto não foi declarado.
+
+
+============== VIDEO 06 OBJETOS =====================
+
+Objeto nada mais é que uma coleção dinâmica de chaves e valores.
+
+
+============== VIDEO 07 08 FUNÇÕES =====================
+
+
+A linguagem JavaScript não tem: CLASSES, CONSTRUTOR, MÉTODO, MÓDULO. Isso pode ser simulado através das FUNÇÕES.
+
+FUNÇÃO DE PRIMEIRA CLASSE => Pode ser atribuída a uma variável, passada como parametro ou ser retornada de outra função.
+
+FUNÇÃO FÁBRICA => Faz o return de um objeto de retorno. Ela volta um objeto criado para expor a parte pública.
+
+FUNÇÃO CONSTRUTORA => Usa o operador NEW.
+
+FUNCTION DECLARATION (FUNÇÃO DECLARATIVA) => Função é carregada antes do código ser interpretado.
+
+FUNCTION EXPRESSION (FUNÇÃO EXPRESSIVA) => A função é carregada durante a interpretação do código.
+
+EXISTE 4 FORMAS DE INVOCAR FUNÇÕES => Por "ESCOPO GLOBAL", por "OBJETO", pelo "CALL" e "APPLY", e pelo o "OPERADOR NEW".
+
+LAMBDA = Pelo que eu entendi no video , serve para REUSO DE CÓDIGO, passa uma função por parametro.
+
+CLOSURES => Significa fechamento, encerramento. "UMA FUNÇÃO INTERNA ACESSA UMA FUNÇÃO EXTERNA".
+
+THIS =>  Acessa , um objeto que foi declarado no escopo da função.
+
+CALL => Passa os parametros abertos.
+
+APLLY => Passa um paramentro através de array.
+OBS(CALL E APLLY) => Se passar outros valores por paramentros eles são ignorados, mas podemos invocalos através de ARGUMENTS.
+
+ENCAPSULAMENTO => Podemos fazer "ENCAPSULAÇÃO" de duas formas, por meio de "OBJECT" e por meio de "FUNCTION". 
+                  Encapsulamento por meio de objeto, pode ter problema, porque posso introduzir conteúdo, causando problemas no código.
+                  O recomendado é fazer encapsulamento por meio das FUNCTION, pois ela tem os blocos isolados. 
+                  
+
+
+============== VIDEO 09 ARRAY =====================
+
+Não existe array de tamanho finito na linguagem Javascript. O Array pode ter um valor inicial, 
+porém se quisermos inserir um valor maior que o valor inicial do array... O valor declarado anteriormente passa a ficar vazio até o alcançar o número declarado.
+
+
+============== VIDEO 10 EXPRESSÕES REGULARES =====================
+
+Expressões regulares são estruturas formadas por caracteres, que servem para poder tratar campos de formulários por exemplo...
+
+============== VIDEO 11 DATE =====================
+
+Date é uma API usada é claro para declarar tempo, horas, minutos, segundos etc... A data não é apresentada de forma literal e sim de forma em milesegundos. 
+
+
+============== VIDEO 12 OPERADORES =====================
+
+
+Na linguagem JavaScript temos os operadores "LÓGICOS" esses operadores indicam "TRUE"  "FALSE" são esses "||" e "&&", lembrando que essa sintaxe é dado o nome
+de "SOBRECARGA". Em JavaScript também temos outros tipos de operadores como: ARITMÉTICOS, ATRIBUIÇÃO, INCREMENTO E DECREMENTO, TERNÁRIO...
+
+
+
+============== VIDEO 13 STATEMENTS =====================
+
+Os tipos de "STATEMENTS" são : if, else, for, while, switch, throw, try, catch, continue, break.
+
+
+
+============== VIDEO 14 e 15 HERANÇA =====================
+
+
+Herança é objeto que herda de outro objeto... Protótipo nada mais é que um objeto e também pode ser null.
+OBS: Não é muito recomendado usar a propriedade __proto__, pois ela não é totalmente compatível com todos os navegadores. 
+
